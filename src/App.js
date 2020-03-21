@@ -1,26 +1,36 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
+import Navigation from './components/Navigation';
+import Container from '@material-ui/core/Container';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import BooksContainer from './containers/BooksContainer';
+import AddBookContainer from './containers/AddBookContainer';
+
+
+class App extends Component {
+  componentDidMount () {
+  }
+
+  render () {
+    let routes = (
+      <Switch>
+        <Route path="/" exact component={BooksContainer} />
+        <Route path="/addbook" exact component={AddBookContainer} />
+        <Redirect to="/"  />
+      </Switch>
+    );
+    
+    return (
+      <Container component="main" maxWidth="xs">
+          {routes}
+          <Navigation />
+      </Container>
+    );
+  }
+
+  
 }
 
 export default App;
