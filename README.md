@@ -11,16 +11,12 @@ Developer can develop the View of the. Web based on his/her liking . View should
 
 ## How to install
 
-node environment should avaliable , if not avalibel please install
+Node environment should avaliable to your locsl system , if not avalibel please install it.
+check installed node version using command `node -v` and also npm  version using command `npm -v` 
 
-check installed node version using command `node -v` 
-check installed npm  version using command `npm -v` 
+Now go to inside project folder run command `npm install`
 
-Now go inside project folder run command `npm install`
-
-
-
-`npm start` to start dev server with hot reload, it's live on `localhost:3000`.
+After node modules installation done, run command `npm start` to start dev server with hot reload, it's live on `localhost:3000`.
 
 
 
