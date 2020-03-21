@@ -8,12 +8,13 @@ Developer can develop the View of the. Web based on his/her liking . View should
 
 ## How to install
 
-Node environment should be avaliable to run the application in your local systems , if not avalibel please install it.
-check installed node version using command `node -v` and also npm  version using command `npm -v` 
+Node environment should be available to run the application in your local systems , if not available please install it.
+Check installed node version using command `node -v` and also npm version using command `npm -v` 
 
 Now go to inside project folder run command `npm install`
 
 After node modules installation done, run command `npm start` to start dev server with hot reload, it's live on `localhost:3000`.
+
 
 
 
