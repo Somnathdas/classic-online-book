@@ -12,17 +12,12 @@ Developer can develop the View of the. Web based on his/her liking . View should
 
 ## How to install
 
-node environment should avaliable , if not avalibel please install
+node environment should avaliable to your local system , if not avaliabel please install current node js stable version
 
 check installed node version using command `node -v` 
 check installed npm  version using command `npm -v` 
-
-Now go inside project folder and run bellow command 
-`npm install`
-
-
-
-`npm start` to start dev server with hot reload, it's live on `localhost:3000`.
+Go to inside project folder and run  command `npm install`
+After installion done of node modules , run command `npm start` to start dev server with hot reload, it's live on `localhost:3000`.
 
 
 
