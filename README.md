@@ -16,7 +16,7 @@ node environment should avaliable , if not avalibel please install
 check installed node version using command `node -v` 
 check installed npm  version using command `npm -v` 
 
-Now go inside project folder and run bellow command 
+Now go inside project folder remove package-lock.json file and run bellow command 
 `npm install`
 
 
