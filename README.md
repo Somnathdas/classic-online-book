@@ -1,6 +1,6 @@
 
-# simple-redux-app
-Book library system.
+# Book library system.
+
 
 ## What is this
 A classic online book library has all the features of a physical library. Online book library system should be user friendly
