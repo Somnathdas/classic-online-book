@@ -5,7 +5,7 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import AddBoxIcon from '@material-ui/icons/AddBox';
 import HomeIcon from '@material-ui/icons/Home';
 import Grid from '@material-ui/core/Grid';
-import { Route, NavLink, Switch, Redirect } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 const useStyles = makeStyles({
   root: {
     width: 500,

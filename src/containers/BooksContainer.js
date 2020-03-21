@@ -1,17 +1,10 @@
-import React, { useState, useEffect, useCallback, useRef} from 'react';
-import { connect } from 'react-redux';
+import React, { useState, useEffect, useRef} from 'react';
 import List from '../components/List';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
-import Avatar from '@material-ui/core/Avatar';
-import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 
 const useStyles = makeStyles(theme => ({
@@ -39,17 +32,8 @@ export const BooksContainer = () => {
     const books = useSelector(state => state.onlineBook.books);
     const [displayBook, setdisplayBook] = useState([]);
     const [enteredFilter, setEnteredFilter] = useState('');
-
     const inputRef = useRef();
-  
-    const filterValue = (event) =>{
-      setEnteredFilter(event.target.value);
-      const result = displayBook.filter(book => book.title == inputRef.current.value);
-      setdisplayBook(result);
-    }
-   
 
-     
     useEffect(() => {
       console.log('render books', books);
       setdisplayBook(books);
@@ -76,7 +60,7 @@ export const BooksContainer = () => {
             onChange={event => 
               {
               setEnteredFilter(event.target.value);
-              const result = displayBook.filter(book => book.title == event.target.value);
+              const result = displayBook.filter(book => book.title === event.target.value);
               setdisplayBook(result);
               }
 
